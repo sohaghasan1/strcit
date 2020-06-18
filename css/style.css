@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* font-family: 'Lato', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+header{
+    background-color: #f6f9f9;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.banner h1{
+    
+color: #fff;
+    
+font-size: 70px;
+    
+text-transform: uppercase;
+}
+.banner span{
+    
+display: block;
+    
+height: 2px;
+    
+width: 100%;
+    
+background: #15a4fa;
+}
+.banner p{
+    
+color: #fff;
+    
+font-size: 14px;
+    
+margin: 0;
+    
+padding: 20px 0;
+}
+.banner a{
+    
+background: transparent;
+    
+border: none;
+    
+border: 1px solid #15a4fa;
+    
+padding: 10px 25px;
+    
+margin-top: 30px;
+}
+.banner a:hover{
+    background-color: #15a4fa;
+    border: 1px solid transparent;
+}
+.banner .row{
+    min-height:100vh;
+}
+.content{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110%;
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes updown{
+    0%{
+        top: 110%;
+    }
+
+    100%{
+        top: 120%;
+    }
+}
+.simple-section{
+
+background: #f6f9f9;
+
+/* margin: 50px 0; */
+
+padding: 50px 0;
+}
+.simple-section h1{
+    
+color: #2d3950;
+    
+font-size: 40px;
+}
+.simple-section p{
+    
+color: #2d3950;
+    
+font-size: 15px;
+}
+.feature{
+
+padding: 50px 0;
+}
+.feature h3{
+
+}
+.feature p{
+
+}
+.feature-icon{
+
+margin: auto;
+
+height: 100px;
+
+width: 100px;
+
+/* background: red; */
+
+color: #fff;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+
+background: rgb(72,186,255); /* Old browsers */
+
+background: -moz-linear-gradient(left,  rgba(72,186,255,1) 0%, rgba(72,186,255,1) 50%, rgba(95,195,255,1) 50%, rgba(95,195,255,1) 100%); /* FF3.6-15 */
+
+background: -webkit-linear-gradient(left,  rgba(72,186,255,1) 0%,rgba(72,186,255,1) 50%,rgba(95,195,255,1) 50%,rgba(95,195,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+
+background: linear-gradient(to right,  rgba(72,186,255,1) 0%,rgba(72,186,255,1) 50%,rgba(95,195,255,1) 50%,rgba(95,195,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+font-size: 50px;
+
+text-align: center;
+
+line-height: 100px;
+
+margin-bottom: 20px;
+
+}
+.showcase{
+
+background: #f6f9f9;
+
+padding: 50px 0;
+}
+.showcase h1{
+    
+}
+.showcase p{
+    
+}
+.image{
+    position: relative;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 0%;
+    height:100%;
+    background-color: #48baff99;
+    transition: .4s all;
+}
+.image::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 0;
+    height: 100%;
+    background-color: #48baff99;
+    transition: .4s all;
+}
+.image:hover::before{
+   width:50%;
+}
+.image:hover::after{
+    width: 50%;
+ }
+ .image-icon{
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+color: #fff;
+
+font-size: 20px;
+
+transform: translate(-50%, -50%);
+opacity: 0;
+z-index: 999;
+transition: .4s all;
+
+}
+ .image-icon i{
+     
+border: 1px solid;
+     
+padding: 10px;
+     
+border-radius: 5px;
+     
+/* z-index: 22; */
+}
+.image:hover .image-icon{
+    opacity: 1;
+}
+.contact{
+    background-image: url(../images/contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+}
+.contact::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d395096;
+}
+.heading h1{
+
+color: #fff;
+}
+.heading p{
+
+color: #fff;
+}
+.contact input{
+    background-color: transparent;
+   
+}
+.contact input:focus{
+    background-color: transparent;
+    outline: none;
+}
+.contact textarea:focus{
+    background-color: transparent;
+    outline: none;
+}
+.contact textarea{
+    background-color: transparent;
+    outline: none;
+}
+.contact input[type="checkbox"]{
+  background-color: #9ba1ab;
+}
+.form-check span{
+    color: #fff;
+}
+.btn-custom{
+    background: transparent;
+    
+border: none;
+    
+border: 1px solid #15a4fa;
+    
+padding: 10px 25px;
+}
+.btn-custom:hover{
+    background-color: #15a4fa;
+    border: 1px solid transparent;
+}
+.check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.check .form-group{
+    margin-bottom: 0;
+}
